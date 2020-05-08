@@ -35,7 +35,7 @@ from resourses.session.login_resource import LoginResource
 from resourses.keywords_resource import KeywordsResource
 from resourses.papers_resource import PapersResource
 from resourses.users_resource import UsersResource
-
+from resourses.selects_resource import SelectsResource
 # from utils.error_handle import *
 # for ex in default_exceptions:
 #     app.register_error_handler(ex, handle_error)
@@ -52,7 +52,7 @@ api.add_resource(KeywordsResource, '/keywords',
                  '/keywords/<int:keyword_id>')
 
 api.add_resource(CoursesResource,  '/courses', '/courses/<int:course_id>')
-
+api.add_resource(SelectsResource,  '/selects')
 
 if __name__ == '__main__':
     app.run()
