@@ -64,7 +64,6 @@ class UsersResource(Resource):
         user = User(
             name=args['name'],
             email=args['email'],
-            first_language=args['first_language'],
             intro=args['intro'],
             avatar=args['avatar']
         )

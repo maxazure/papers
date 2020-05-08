@@ -13,8 +13,6 @@ user_fields = {
 
     'email': fields.String,
 
-    'first_language': fields.String,
-
     'intro': fields.String,
 
     'avatar': fields.String,
@@ -37,7 +35,6 @@ user_post_parser.add_argument('email', type=str, )
 
 
 
-user_post_parser.add_argument('first_language', type=str, )
 
 user_post_parser.add_argument('intro', type=str, )
 
@@ -51,8 +48,6 @@ user_update_parser.add_argument('name', type=str)
 user_update_parser.add_argument('email', type=str)
 
 
-
-user_update_parser.add_argument('first_language', type=str)
 
 user_update_parser.add_argument('intro', type=str)
 
@@ -84,9 +79,6 @@ def update_all_fields(args, o):
 
         o.name = args['name']
 
-    if args['first_language']:
-
-        o.first_language = args['first_language']
 
     if args['intro']:
 

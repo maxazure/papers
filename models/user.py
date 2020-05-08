@@ -13,8 +13,6 @@ class User(BaseModel):
 
     password_hash = db.Column(db.String(), nullable=False)
 
-    first_language = db.Column(db.String())
-
     intro = db.Column(db.String())
 
     avatar = db.Column(db.String())

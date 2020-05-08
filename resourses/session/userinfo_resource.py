@@ -22,7 +22,5 @@ class UserinfoResource(Resource):
             "name": user.name,
             "avatar": user.avatar,
             "intro": user.intro,
-            "first_language": user.first_language
-
         }
         return max_res(res)
